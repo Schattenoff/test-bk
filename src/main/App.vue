@@ -41,6 +41,7 @@ export default {
 
 <style>
 @import '../common/fonts/flame/fonts.css';
+@import '../common/fonts/rotondac/fonts.css';
 @import '../common/style/reset.css';
 @import '../common/style/app.css';
 </style>

@@ -17,7 +17,6 @@ export default defineConfig({
 
     build: {
         target: 'es2015',
-        outDir: '../assets',
         emptyOutDir: true,
         rollupOptions: {
             output: {

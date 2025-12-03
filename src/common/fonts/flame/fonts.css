@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Flame-Regular'; /* 👈 Имя, которое будет использоваться в CSS */
-    src: url('./Flame-Regular.otf') format('opentype'); /* 👈 Укажите правильный путь к файлу */
+    src: url('./Flame-Regular.OTF') format('opentype'); /* 👈 Укажите правильный путь к файлу */
     font-weight: 400; /* Соответствует "Regular" */
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 /* Подключение шрифта Flame-Bold */
 @font-face {
     font-family: 'Flame-Bold'; /* 👈 Имя, которое будет использоваться в CSS */
-    src: url('./Flame-Bold.otf') format('opentype'); /* 👈 Укажите правильный путь к файлу */
+    src: url('./Flame-Bold.OTF') format('opentype'); /* 👈 Укажите правильный путь к файлу */
     font-weight: 700;
     font-style: normal;
     font-display: swap;
