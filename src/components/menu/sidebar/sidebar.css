@@ -1,0 +1,89 @@
+/* --- Sidebar Styles --- */
+.sidebar {
+    width: 254px;
+    min-width: 254px;
+    height: fit-content;
+    background-color: var(--color-background-card);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.categoryNav {
+    padding: 12px;
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categoryItem {
+    display: flex;
+}
+
+.categoryItemWide {
+    width: 100%;
+}
+
+.categoryLink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    width: 100%;
+    padding: 4px 0;
+    /* Добавляем transition для плавного изменения цвета текста при ховере */
+    transition: color 200ms ease;
+    letter-spacing: 0.01em;
+}
+
+.categoryIcon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-background-light);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 200ms ease; /* Добавляем transition для иконки */
+}
+
+.categoryImage {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+}
+
+/* --- Стили для активной ссылки --- */
+
+.categoryLinkActive .categoryIcon {
+    /* Бордер удален */
+}
+
+.categoryLinkActive .categoryName {
+    /* Красим текст в оранжевый */
+    color: var(--color-accent-primary);
+    font-family: "Flame-Bold", sans-serif; /* Можно сделать жирнее для акцента */
+}
+
+/* --- Стили для имени категории --- */
+
+.categoryName {
+    font-family: "Flame-Regular", sans-serif;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    font-size: 18px;
+    transition: color 200ms ease;
+}
+
+.categoryLink:not(.categoryLinkActive):hover .categoryName {
+    color: var(--color-accent-primary);
+}

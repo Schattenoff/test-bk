@@ -1,0 +1,158 @@
+/* --- Main Content Styles --- */
+.contentWrapper {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mainContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.deliverySection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.deliveryToggle {
+    width: 500px;
+    max-width: 100%;
+    height: 60px;
+    /* Исходный цвет: var(--bpnv-NH) - Темно-коричневый */
+    background-color: var(--color-text-primary);
+    border-radius: 40px;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.deliveryButton {
+    flex: 1;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    font-family: "Flame-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: normal;
+    /* Исходный цвет: #fdf6ec - Очень светлый кремовый */
+    color: var(--color-background-card);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.deliveryButtonActive {
+    /* Исходный цвет: #fff5ec - Светлый кремовый/почти белый */
+    background-color: var(--color-background-card);
+    /* Исходный цвет: var(--bpnv-NH) - Темно-коричневый */
+    color: var(--color-text-primary);
+}
+
+.addressInput {
+    width: 500px;
+    max-width: 100%;
+    height: 60px;
+    /* Исходный цвет: #fff5ec - Светлый кремовый/почти белый */
+    background-color: var(--color-background-card);
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.addressIcon {
+    width: 11px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+.addressIconPin {
+    position: absolute;
+    width: 4.67px;
+    height: 6px;
+    top: 5px;
+    left: 3px;
+}
+
+.addressIconCircle {
+    width: 100%;
+    height: 100%;
+}
+
+.addressText {
+    font-family: "Flame-Regular", Helvetica;
+    font-weight: 400;
+    /* Исходный цвет: var(--bpnv-NH) - Темно-коричневый */
+    color: var(--color-text-primary);
+    font-size: 20px;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.addressArrow {
+    margin-left: auto;
+    width: 7px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.promoBanner {
+    width: 100%;
+    height: auto;
+    max-height: 354px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.productsTitle {
+    font-family: "Flame-Bold", sans-serif;
+    font-weight: 700;
+    /* Исходный цвет: #532013 - Темно-коричневый */
+    color: var(--color-text-primary);
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 50.5px;
+    margin: 0 0 26px 0;
+}
+
+.productsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productsRow {
+    display: flex;
+    gap: 20px;
+}

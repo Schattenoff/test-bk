@@ -1,0 +1,81 @@
+.footer {
+    width: 100%;
+    padding: 64px 65px;
+    background-color: var(--color-background-card); /* 👈 Использована переменная */
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 95px;
+    margin: 0 auto;
+}
+
+.footerLogoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footerLogoSectionWrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footerLogoText {
+    font-family: "Flame-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.footerCopyright {
+    max-width: 195px;
+    color: #A68B7F;
+    font-family: 'RotondaC-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+}
+
+.footerNav,
+.footerNavLegal {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerLink {
+    font-family: "Flame-Regular", sans-serif;
+    font-weight: 400;
+    color: var(--color-text-primary); /* Использую --color-text-primary для текста (темно-коричневый) */
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.footerLink:hover {
+    color: var(--color-accent-primary);
+}
+
+.footerSocial {
+    margin-left: auto; /* Отталкивает вправо на десктопе */
+}
+
+.footerSocialIcons {
+    max-width: 100%;
+    height: auto;
+}

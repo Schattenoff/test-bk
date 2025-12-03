@@ -1,0 +1,16 @@
+:root {
+    --color-background-light: rgba(242, 232, 217, 1);
+    --color-text-primary: rgba(83, 32, 19, 1);
+    --color-background-card: rgba(251, 245, 234, 1);
+    --color-accent-primary: rgba(244, 130, 61, 1);
+    --color-accent-spicy: rgba(197, 50, 25, 1);
+    --color-text-secondary: rgba(166, 139, 127, 1);
+    --color-badge-bestseller: rgba(32, 146, 62, 1);
+    --shadow-card-default: 0px 1px 12px 0px rgba(83, 32, 19, 0.16);
+    --color-accent-orange-semi: rgba(255, 122, 0, 0.85);
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+}

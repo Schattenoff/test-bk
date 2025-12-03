@@ -1,0 +1,132 @@
+.mainWrapper {
+    background-color: var(--color-background-light);
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*!* Планшеты и большие мобильные устройства (до 1200px) *!*/
+/*@media (max-width: 1200px) {*/
+/*    .headerContainer,*/
+/*    .heroCarousel,*/
+/*    .contentWrapper,*/
+/*    .footer {*/
+/*        padding-left: 30px;*/
+/*        padding-right: 30px;*/
+/*    }*/
+
+/*    .sidebar {*/
+/*        !* При этой ширине сайдбар может быть слишком широким *!*/
+/*        width: 200px;*/
+/*        min-width: 200px;*/
+/*    }*/
+
+/*    .productsRow {*/
+/*        justify-content: space-around; !* Центрируем карточки, когда их меньше 4 в ряду *!*/
+/*    }*/
+
+/*    .productCard {*/
+/*        flex-basis: calc(50% - 10px); !* 2 карточки в ряд *!*/
+/*        max-width: 350px;*/
+/*        min-width: 0;*/
+/*    }*/
+/*}*/
+
+/*!* Мобильные устройства (до 768px) *!*/
+/*@media (max-width: 768px) {*/
+/*    .headerContainer,*/
+/*    .heroCarousel,*/
+/*    .contentWrapper,*/
+/*    .footer {*/
+/*        padding-left: 15px;*/
+/*        padding-right: 15px;*/
+/*    }*/
+
+/*    !* Скрываем полную навигацию, оставляя только логотип и корзину *!*/
+/*    .restaurantsDropdown,*/
+/*    .headerLinks {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .cartButton {*/
+/*        display: none; !* Скрываем десктопную корзину *!*/
+/*    }*/
+
+/*    .mobileCart {*/
+/*        display: flex; !* Показываем мобильную корзину *!*/
+/*        margin-left: auto;*/
+/*    }*/
+
+/*    .contentWrapper {*/
+/*        flex-direction: column; !* Сайдбар и контент идут друг за другом *!*/
+/*        padding-top: 16px;*/
+/*    }*/
+
+/*    .sidebar {*/
+/*        width: 100%;*/
+/*        !* Сайдбар теперь может быть с горизонтальным скроллом для категорий *!*/
+/*        order: -1; !* Перемещаем сайдбар наверх *!*/
+/*    }*/
+
+/*    .categoryNav {*/
+/*        overflow-x: auto;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .categoryList {*/
+/*        flex-direction: row; !* Категории в ряд *!*/
+/*        width: fit-content;*/
+/*        gap: 8px;*/
+/*    }*/
+
+/*    .categoryItem {*/
+/*        flex-shrink: 0; !* Не сжимать категории *!*/
+/*    }*/
+
+/*    .categoryLink {*/
+/*        flex-direction: column;*/
+/*        text-align: center;*/
+/*        width: auto;*/
+/*        gap: 4px;*/
+/*    }*/
+
+/*    .categoryName, .categoryNameWide {*/
+/*        font-size: 14px;*/
+/*        white-space: nowrap;*/
+/*    }*/
+
+/*    .deliverySection {*/
+/*        flex-direction: column;*/
+/*        gap: 10px;*/
+/*    }*/
+
+/*    .deliveryToggle,*/
+/*    .addressInput {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .productsTitle {*/
+/*        font-size: 32px;*/
+/*    }*/
+
+/*    .productsRow {*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .productCard {*/
+/*        flex-basis: calc(100% - 20px); !* 1 карточка в ряд (почти полная ширина) *!*/
+/*        max-width: 400px;*/
+/*        min-width: 0;*/
+/*    }*/
+
+/*    .footerContainer {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .footerSocial {*/
+/*        margin-left: 0; !* Центрируем социальные иконки *!*/
+/*    }*/
+/*}*/

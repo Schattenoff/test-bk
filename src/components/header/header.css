@@ -1,0 +1,215 @@
+/* --- Хедер --- */
+.header {
+    width: 100%;
+    /* Исходный цвет: var(--n-bi-nh-o) - Очень светлый бежевый/почти белый */
+    background-color: var(--color-background-card);
+    /* Исходная тень: var(--shadow-default) */
+    box-shadow: var(--shadow-card-default);
+    position: sticky; /* Добавлено, чтобы заголовок оставался видимым при прокрутке */
+    top: 0;
+    z-index: 100;
+}
+
+.headerContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 65px;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    gap: 16px;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+}
+
+.logoHeader {
+    width: 40.74px;
+    height: 45px;
+}
+
+.restaurantsDropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 51px;
+}
+
+.restaurantsText {
+    font-family: "Flame-Regular", Helvetica;
+    font-weight: 400;
+    /* Исходный цвет: var(--bpnv-NH) - Темно-коричневый */
+    color: var(--color-text-primary);
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dropdownIcon {
+    width: 10px;
+    height: 6.41px;
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerLink {
+    font-family: "Flame-Regular", Helvetica;
+    font-weight: 400;
+    /* Исходный цвет: var(--x-68-blt-v) - Серо-коричневый (Вторичный текст) */
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.headerLink:hover,
+.headerLink:focus {
+    /* Исходный цвет: var(--bpnv-NH) - Темно-коричневый */
+    color: var(--color-text-primary);
+}
+
+.cartButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+.cartIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-background-light);
+    border: 1px solid var(--color-background-light);
+    border-radius: 20px;
+}
+
+.cartIcon {
+    width: 12px;
+    height: 12px;
+}
+
+.cartDetails {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 14px;
+    border-radius: 32px;
+    /* Исходный цвет: var(--PFJ-qw-o) - Яркий оранжевый */
+    border: 1px solid var(--color-accent-primary);
+}
+
+.cartBagIcon {
+    width: 11.16px;
+    height: 14.08px;
+}
+
+.cartPrice {
+    font-family: "Flame-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--color-accent-primary);
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+
+.rDropdownContent {
+    visibility: hidden;
+    opacity: 0;
+    top: calc(100% + 28px);
+    left: -27px;
+    position: absolute;
+    width: 381px;
+    height: 285px;
+    padding: 32px 27px;
+    background-color: var(--color-background-card);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+    transform: translateY(25px);
+    transition: .2s ease;
+}
+
+.restaurantsDropdown--open .rDropdownContent {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.restaurantsArrow {
+    transition: transform .2s ease;
+}
+
+.restaurantsDropdown--open .restaurantsArrow {
+    transform: rotate(180deg);
+}
+
+.rDropdownContent__title {
+    font-family: "Flame-Regular", sans-serif;
+    font-weight: 400;
+    color: var(--color-accent-primary);
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: normal;
+    margin: 0 0 17px 0;
+    text-align: left;
+}
+
+.rDropdownContent__list {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.rDropdownContent__item {
+    text-align: left;
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "RotondaC-Regular", sans-serif;
+    font-weight: 400;
+    color: #532013;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19.2px;
+}
+
+.rDropdown__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
