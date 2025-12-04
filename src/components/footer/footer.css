@@ -5,33 +5,35 @@
     box-sizing: border-box;
 }
 
-.footerContainer {
+.footer__container {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 95px;
     margin: 0 auto;
 }
 
-.footerLogoSection {
+.footer__logoSection {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex-shrink: 0;
 }
 
-.footerLogoSectionWrap {
+.footer__logoSectionWrap {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.footerLogoText {
+.footer__logoSectionText {
     font-family: "Flame-Regular", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
 }
 
-.footerCopyright {
+.footer__copyright {
     max-width: 195px;
     color: #A68B7F;
     font-family: 'RotondaC-Regular', sans-serif;
@@ -40,14 +42,14 @@
     line-height: 130%;
 }
 
-.footerNav,
-.footerNavLegal {
+.footer__nav,
+.footer__navLegal {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-.footerLinks {
+.footer__links {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -56,7 +58,7 @@
     padding: 0;
 }
 
-.footerLink {
+.footer__link {
     font-family: "Flame-Regular", sans-serif;
     font-weight: 400;
     color: var(--color-text-primary); /* Использую --color-text-primary для текста (темно-коричневый) */
@@ -67,15 +69,19 @@
     transition: color 200ms;
 }
 
-.footerLink:hover {
+.footer__link:hover {
     color: var(--color-accent-primary);
 }
 
-.footerSocial {
-    margin-left: auto; /* Отталкивает вправо на десктопе */
+.footer__payments {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -29px;
+    margin-top: -20px;
+    max-width: 475px;
 }
 
-.footerSocialIcons {
-    max-width: 100%;
-    height: auto;
+.footer__paymentIcon {
+    margin-top: 20px;
+    margin-right: 29px;
 }

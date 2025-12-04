@@ -1,0 +1,23 @@
+.sidebar {
+    width: 254px;
+    min-width: 254px;
+    height: fit-content;
+    background-color: var(--color-background-card);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.categoryNav {
+    padding: 12px;
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+

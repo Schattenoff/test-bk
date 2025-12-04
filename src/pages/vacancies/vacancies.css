@@ -56,10 +56,23 @@
     justify-content: flex-end;
 }
 
+.vBenefits__bgImage {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+    width: 932px;
+    height: auto;
+    pointer-events: none;
+}
+
 .vBenefits__wrap {
     display: flex;
     align-items: center;
     gap: 16px;
+    position: relative;
+    z-index: 1;
 }
 
 .vBenefits__item {

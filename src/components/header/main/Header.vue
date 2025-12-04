@@ -1,25 +1,20 @@
 <script>
+import RestaurantsDropdown from '../restaurants-dropdown/RestaurantsDropdown.vue';
+
 export default {
     name: 'TheHeader',
 
-    inject: ['openWarning'],
-
-    data() {
-        return {
-            isOpenRestaurants: false,
-        }
+    components: {
+        RestaurantsDropdown
     },
 
-    methods: {
-        onToggleRest() {
-            this.isOpenRestaurants = !this.isOpenRestaurants;
-        },
+    inject: ['openWarning'],
 
-        onCloseRest() {
-            this.isOpenRestaurants = false;
+    methods: {
+        isActive(path) {
+            return this.$route.path === path;
         }
     }
-
 };
 </script>
 
@@ -30,32 +25,10 @@ export default {
                 <a href="/" class="logoLink" aria-label="Burger King главная страница">
                     <img class="logoHeader" src="/img/logo.svg" alt="Burger King логотип" />
                 </a>
-                <button class="restaurantsDropdown"
-                        :class="{'restaurantsDropdown--open': isOpenRestaurants}"
-                        @click="onToggleRest"
-                        aria-label="Наши рестораны" aria-expanded="false">
-                    <span class="restaurantsText">Наши рестораны</span>
-                    <svg class="restaurantsArrow" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L5 5L9 1" stroke="#532013" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-
-                    <div class="rDropdownContent" @click.stop>
-                        <h1 class="rDropdownContent__title">Ждём вас по следующим адресам!</h1>
-
-                        <div class="rDropdownContent__list">
-                            <p class="rDropdownContent__item">
-                                Алпомиш: Ледовый дворец Alpomish, <br />Ташкент, Шайхантохурский район, проспект Беруни, 41а.
-                            </p>
-                            <p class="rDropdownContent__item">ТЦ Tashkent City Mall, Ташкент, Шайхантохурский район, улица Батыра Закирова, 7</p>
-                            <p class="rDropdownContent__item">Сеул Мун: Ташкент Чиланзарский район, улица Сеульская, D30</p>
-                        </div>
-                    </div>
-
-                </button>
+                <RestaurantsDropdown />
                 <ul class="headerLinks">
-                    <li><a href="/vacancies" class="headerLink">Вакансии</a></li>
-                    <li><a href="/contacts" class="headerLink">Контакты</a></li>
-                    <li><a href="/king-club" class="headerLink">King Club</a></li>
+                    <li><a href="/vacancies" :class="['headerLink', { 'headerLink--active': isActive('/vacancies') }]">Вакансии</a></li>
+                    <li><a href="/contacts" :class="['headerLink', { 'headerLink--active': isActive('/contacts') }]">Контакты</a></li>
                 </ul>
                 <button class="cartButton" type="button" aria-label="Корзина" @click="openWarning">
                     <span class="cartIconWrapper">
@@ -78,3 +51,4 @@ export default {
 <style src="./header.css" scoped>
 
 </style>
+

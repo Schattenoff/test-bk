@@ -1,5 +1,5 @@
 <script>
-import Header from "@/components/header/Header.vue";
+import Header from "@/components/header/main/Header.vue";
 import Footer from "@/components/footer/Footer.vue";
 import Jobs from "@/components/jobs/main/Jobs.vue";
 import Form from "@/components/form/Form.vue";
@@ -30,7 +30,7 @@ export default  {
             </div>
 
             <div class="vBenefits">
-
+                <img src="/img/burgerUp.svg" alt="" class="vBenefits__bgImage" aria-hidden="true">
                 <div class="vBenefits__wrap">
                     <div class="vBenefits__item">
                         <svg width="37" height="43" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">

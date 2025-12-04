@@ -1,5 +1,5 @@
 <script>
-import Header from "@/components/header/Header.vue";
+import Header from "@/components/header/main/Header.vue";
 import Promos from "@/components/promos/Promos.vue";
 import Menu from "@/components/menu/main/Main.vue";
 import Footer from "@/components/footer/Footer.vue";

@@ -58,11 +58,9 @@
 }
 
 .dishImage {
-    max-width: 85%;
-    max-height: 80%;
-    height: auto;
+    max-width: 200px;
+    height: 240px;
     object-fit: contain;
-    margin-top: auto;
 }
 
 .dishName {

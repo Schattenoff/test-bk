@@ -1,6 +1,6 @@
 <script>
 
-import Sidebar from "@/components/menu/sidebar/Sidebar.vue";
+import SidebarMain from "@/components/menu/sidebar/main/SidebarMain.vue";
 import Dish from "@/components/menu/dish/dish.vue";
 
 export default {
@@ -9,7 +9,7 @@ export default {
     inject: ['openWarning'],
 
     components: {
-        Sidebar,
+        SidebarMain,
         Dish,
     },
     data() {
@@ -32,7 +32,7 @@ export default {
 <template>
     <div class="container">
         <div class="contentWrapper">
-            <Sidebar />
+            <SidebarMain />
             <section class="mainContent">
                 <div class="mainContentContainer">
                     <div class="deliverySection">

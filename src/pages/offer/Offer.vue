@@ -3,7 +3,7 @@ import Header from "@/components/header/main/Header.vue";
 import Footer from "@/components/footer/Footer.vue";
 
 export default {
-    name: 'Contacts',
+    name: 'Offer',
 
     components: {
         Header,
@@ -15,11 +15,11 @@ export default {
 <template>
     <Header />
 
-    <section class="contacts">
+    <section class="offer">
         <div class="container">
-            <h1 class="contacts__title">Контакты</h1>
-            <div class="contacts__content">
-                <p class="contacts__text">Здесь будет размещена контактная информация.</p>
+            <h1 class="offer__title">Публичная оферта</h1>
+            <div class="offer__content">
+                <p class="offer__text">Здесь будет размещена публичная оферта.</p>
             </div>
         </div>
     </section>
@@ -27,5 +27,6 @@ export default {
     <Footer />
 </template>
 
-<style src="./contacts.css" scoped>
+<style src="./offer.css" scoped>
 </style>
+

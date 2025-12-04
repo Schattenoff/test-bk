@@ -1,10 +1,10 @@
-.contacts {
+.offer {
     background: #F2E8D9;
     padding: 100px 0;
     min-height: 70vh;
 }
 
-.contacts__title {
+.offer__title {
     font-family: 'Flame-Bold', sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -14,7 +14,7 @@
     margin-bottom: 40px;
 }
 
-.contacts__content {
+.offer__content {
     font-family: 'RotondaC-Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-.contacts__text {
+.offer__text {
     text-align: center;
 }
 
