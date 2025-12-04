@@ -34,9 +34,11 @@ export default {
 </script>
 
 <template>
-    <RouterView />
-    <Warning :isOpen="isOpenWarning"
-             @close="onCloseWarning"></Warning>
+    <div v-cloak>
+        <RouterView />
+        <Warning :isOpen="isOpenWarning"
+                 @close="onCloseWarning"></Warning>
+    </div>
 </template>
 
 <style>

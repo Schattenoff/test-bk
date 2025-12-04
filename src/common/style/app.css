@@ -10,6 +10,10 @@
     --color-accent-orange-semi: rgba(255, 122, 0, 0.85);
 }
 
+[v-cloak] {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
