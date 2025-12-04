@@ -1,0 +1,22 @@
+.vJobs {
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+.vJobs__title {
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    leading-trim: NONE;
+    line-height: 50.46px;
+    text-align: center;
+    color: #532013;
+}
+
+.vJobs__list {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}

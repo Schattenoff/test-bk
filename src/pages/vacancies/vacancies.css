@@ -1,0 +1,96 @@
+.vacancies {
+    background: #F2E8D9;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vHero {
+    text-align: center;
+}
+
+.vHero__title {
+    font-family: 'Flame-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 50.46px;
+    color: #532013;
+}
+
+.vHero__text {
+    font-family: 'RotondaC-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.vHero__button {
+    max-width: 252px;
+    height: 68px;
+    padding: 0 40px;
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FBF5EA;
+    background: #532013;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+.vBenefits {
+    position: relative;
+    background-image: url('../../../public/img/personal.svg');
+    background-position: center -165px;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.vBenefits__wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.vBenefits__item {
+    width: 25%;
+    height: 183px;
+    background: #FBF5EA;
+    border-radius: 24px;
+    color: #532013;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.vBenefits__itemTitle {
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 50.46px;
+    text-align: center;
+}
+
+.vBenefits__itemText {
+    font-family: 'RotondaC-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    text-wrap: balance;
+}
+
+
+

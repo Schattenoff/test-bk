@@ -1,0 +1,90 @@
+.vJobsItem {
+    width: 880px;
+    padding: 20px 32px;
+    background: #FBF5EA;
+    border-radius: 24px;
+}
+
+.vJobsItem__wrapper {
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50.46px;
+    color: #532013;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vJobsItem__button {
+    width: 33px;
+    height: 33px;
+    background-color: #F4823D;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+.vJobsItem__button::before,
+.vJobsItem__button::after {
+    content: '';
+    position: absolute;
+    background-color: white; /* Цвет креста */
+    border-radius: 2px; /* Немного скругленные края палочек */
+    transition: transform 0.3s ease; /* Для анимации перехода в минус */
+}
+
+.vJobsItem__button::before {
+    width: 3px;
+    height: 17px;
+}
+
+.vJobsItem__button::after {
+    width: 17px;
+    height: 3px;
+}
+
+
+.vJobsItem__button.vJobsItem__button--minus::before {
+    transform: scaleY(0);
+}
+
+.vJobsItem__button.vJobsItem__button--minus::after {
+    transform: none;
+}
+
+.vJobsItem__textHtml b {
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #A68B7F;
+}
+
+.vJobsItem__textHtml li {
+    font-family: 'RotondaC-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #A68B7F;
+}
+
+.vJobsItem__btn {
+    margin: 38px 0 0 0;
+    background: #F4823D;
+    width: 186px;
+    height: 60px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #FBF5EA;
+    border-radius: 100px;
+}

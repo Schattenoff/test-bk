@@ -1,0 +1,116 @@
+
+.vForm {
+    padding: 100px 0;
+}
+
+.vForm__wrapper {
+    background-color: #532013;
+    padding: 32px 40px;
+    border-radius: 32px;
+    max-width: 558px;
+    margin: 0 auto;
+}
+
+.vForm__title {
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    leading-trim: NONE;
+    text-align: center;
+    color: #FBF5EA;
+    margin: 0 0 32px 0;
+}
+
+.vForm__body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vForm__select,
+.vForm__input {
+    background-color: #FBF5EA;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 20px 24px;
+    width: 100%;
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 50.46px;
+    color: #532013;
+    box-sizing: border-box;
+    height: 64px;
+}
+
+.vForm__input::placeholder {
+    color: #532013;
+    opacity: 0.6;
+}
+
+.vForm__group--checkbox {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 10px;
+    margin-top: 10px; /* Небольшой отступ сверху */
+}
+
+/* Стилизация кастомного чекбокса и его подписи */
+.vForm__checkbox {
+    /* Скрыть нативный чекбокс */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.vForm__label {
+    display: none;
+}
+
+/* Визуальный элемент чекбокса (на изображении он стилизован) */
+.vForm__label--agreement {
+    position: relative;
+    padding-left: 30px; /* Место для кастомного квадратика */
+    cursor: pointer;
+    color: #FBF5EA; /* Светлый цвет текста */
+    font-family: 'RotondaC-Regular', sans-serif;
+    font-size: 14px;
+}
+
+/* Сам квадратный чекбокс */
+.vForm__label--agreement::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #FBF5EA; /* Светлый фон */
+}
+
+/* Кнопка отправки */
+.vForm__submit-button {
+    background-color: #F4823D;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 0;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Flame-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42.91px;
+    letter-spacing: 0%;
+
+    color: #FBF5EA;
+}
+
+.vForm__submit-button:hover {
+    opacity: 0.9;
+}

@@ -10,7 +10,29 @@
     --color-accent-orange-semi: rgba(255, 122, 0, 0.85);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
-    max-width: 1310px;
+    max-width: 1350px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.spoiler-enter-active,
+.spoiler-leave-active {
+    overflow: hidden;
+    transition: height .3s, opacity .3s;
+}
+
+.spoiler-enter-from,
+.spoiler-leave-to {
+    height: 0 !important;
+    opacity: 0;
 }
