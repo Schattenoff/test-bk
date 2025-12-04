@@ -3,7 +3,6 @@
     src: url('./Flame-Regular.OTF') format('opentype'); /* 👈 Укажите правильный путь к файлу */
     font-weight: 400; /* Соответствует "Regular" */
     font-style: normal;
-    font-display: swap;
 }
 
 /* Подключение шрифта Flame-Bold */
@@ -12,5 +11,4 @@
     src: url('./Flame-Bold.OTF') format('opentype'); /* 👈 Укажите правильный путь к файлу */
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
