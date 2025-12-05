@@ -33,6 +33,20 @@
     line-height: 100%;
 }
 
+.footer__logoSectionLink {
+    display: block;
+    text-decoration: none;
+    color: #522113;
+}
+
+.footer__logoSectionText {
+    transition: color 0.2s;
+}
+
+.footer__logoSectionLink:hover .footer__logoSectionText {
+    color: var(--color-accent-primary);
+}
+
 .footer__copyright {
     max-width: 195px;
     color: #A68B7F;

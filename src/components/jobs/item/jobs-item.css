@@ -57,11 +57,16 @@
     transform: none;
 }
 
-.vJobsItem__textHtml b {
+.vJobsItem__textHtml p {
     font-family: 'Flame-Regular', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #A68B7F;
+    margin: 0 0 16px 0;
+}
+
+.vJobsItem__textHtml ul {
+    margin: 0 0 24px 0;
 }
 
 .vJobsItem__textHtml li {
