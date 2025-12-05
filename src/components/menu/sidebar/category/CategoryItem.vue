@@ -20,9 +20,6 @@ export default {
         isActive() {
             return this.category.isActive || false;
         },
-        isPopular() {
-            return this.category.isPopular || false;
-        }
     },
     methods: {
         handleClick() {
@@ -39,11 +36,10 @@ export default {
             @click="handleClick"
         >
             <span class="categoryIcon">
-                <img 
-                    :class="['categoryImage', { categoryImagePopular: isPopular }]" 
-                    :src="imgUrl" 
-                    alt="" 
-                    aria-hidden="true" 
+                <img class="categoryImage"
+                     :src="imgUrl" 
+                     alt="" 
+                     aria-hidden="true" 
                 />
             </span>
             <span :class="['categoryName', { categoryNameActive: isActive }]">{{ name }}</span>

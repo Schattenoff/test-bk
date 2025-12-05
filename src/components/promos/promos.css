@@ -1,20 +1,25 @@
-/* --- Hero Carousel Styles --- */
-.heroCarousel {
+/* --- Promos Carousel Styles --- */
+.promos {
     width: 100%;
-    overflow-x: auto; /* Позволяем прокрутку для карусели */
+    overflow-x: auto;
     margin: 32px 0 0 0;
+    scrollbar-width: none; /* Firefox */
 }
 
-.heroCarouselContainer {
+.promos::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.promos__container {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: fit-content; /* Позволяет контейнеру быть шире вьюпорта */
+    width: fit-content;
 }
 
-.heroSlide {
-    width: 246px; /* Ширина слайда может быть фиксированной, но лучше использовать относительную, если слайдов меньше */
-    min-width: 246px; /* Гарантируем минимальную ширину */
+.promos__slide {
+    width: 246px;
+    min-width: 246px;
     height: 320px;
     background: #fff;
     border-radius: 32px;
@@ -23,8 +28,23 @@
     cursor: pointer;
 }
 
-.heroSlideImage {
+.promos__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .promos {
+    margin: 18px 0 0 0;
+  }
+  .promos__container {
+    gap: 8px;
+  }
+  .promos__slide {
+    width: 140px;
+    min-width: 140px;
+    height: 180px;
+    border-radius: 14px;
+  }
 }

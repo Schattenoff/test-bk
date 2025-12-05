@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'RotondaC-Regular';
-    src: url('./rotondac.otf') format('opentype'); /* 👈 Укажите правильный путь к файлу */
+    src: url(./rotondac.woff2) format('woff2'),
+    url(./rotondac.woff) format('woff');
     font-weight: 400;
     font-style: normal;
 }

@@ -1,11 +1,8 @@
-/* --- Хедер --- */
 .header {
     width: 100%;
-    /* Исходный цвет: var(--n-bi-nh-o) - Очень светлый бежевый/почти белый */
     background-color: var(--color-background-card);
-    /* Исходная тень: var(--shadow-default) */
     box-shadow: var(--shadow-card-default);
-    position: sticky; /* Добавлено, чтобы заголовок оставался видимым при прокрутке */
+    position: sticky; 
     top: 0;
     z-index: 100;
 }
@@ -79,7 +76,7 @@
     margin-left: auto;
 }
 
-.cartIconWrapper {
+.cartIconSearch {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,5 +115,25 @@
     letter-spacing: 0.18px;
     line-height: normal;
     white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .cartPrice {
+    font-size: 16px;
+  }
+
+  .cartButton {
+    min-width: 28px;
+    gap: 4px;
+  }
+
+  .cartIconSearch {
+    display: none;
+  }
+
+  .headerLink {
+    font-size: 16px;
+  }
+  
 }
 
