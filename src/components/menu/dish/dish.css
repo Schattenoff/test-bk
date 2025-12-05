@@ -7,8 +7,6 @@
     background-color: var(--color-background-card);
     border-radius: 28px;
     overflow: hidden;
-    flex-grow: 1;
-    flex-basis: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +102,6 @@
     cursor: pointer;
     font-family: "Flame-Regular", Helvetica;
     font-weight: 400;
-    /* Исходный цвет: rgba(251, 245, 234, 1) */
     color: var(--color-background-card);
     font-size: 14px;
     letter-spacing: 0.14px;
@@ -115,12 +112,10 @@
 }
 
 .dishButton {
-    /* Исходный цвет: rgba(166, 139, 127, 1) */
     background-color: var(--color-text-secondary);
 }
 
 .dishButtonAlt {
-    /* Исходный цвет: rgba(83, 32, 19, 1) */
     background-color: var(--color-text-primary);
 }
 
@@ -131,4 +126,40 @@
 
 .searchIcon {
     display: none;
+}
+
+@media (max-width: 700px) {
+  .dishCard {
+    width: calc(50% - 5px);
+    max-width: unset;
+    min-width: unset;
+    height: 330px;
+  }
+
+  .dishImageWrapper {
+    padding-top: unset;
+    height: unset;
+  }
+
+  .dishImage {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .dishName {
+    margin: 0;
+    padding: 0 8px;
+    font-size: 17px;
+  }
+
+    .dishWeight {
+        font-size: 15px;
+    }
+
+  .dishButton {
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+  }
+
 }

@@ -21,3 +21,31 @@
     padding: 0;
 }
 
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100vw;
+        min-width: unset;
+        border-radius: 0;
+        position: sticky;
+        top: 68px; 
+        z-index: 11;
+        background: var(--color-background-card);
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,.03);
+        padding: 0;
+        margin: 20px 0 0 -20px;
+    }
+    .categoryNav {
+        padding: 8px 20px;
+    }
+    .categoryList {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 10px;
+        margin: 0;
+    }
+    .categoryList::-webkit-scrollbar {
+        display: none;
+    }
+}
+

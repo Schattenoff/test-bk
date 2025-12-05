@@ -30,42 +30,44 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="contentWrapper">
-            <SidebarMain />
-            <section class="mainContent">
-                <div class="mainContentContainer">
-                    <div class="deliverySection">
-                        <div class="deliveryToggle">
-                            <button class="deliveryButton deliveryButtonActive" aria-pressed="true">Доставка</button>
-                            <button class="deliveryButton" @click="openWarning" aria-pressed="false">Самовывоз</button>
+    <div class="content">
+        <div class="container">
+            <div class="contentWrapper">
+                <SidebarMain />
+                <section class="mainContent">
+                    <div class="mainContentContainer">
+                        <div class="deliverySection">
+                            <div class="deliveryToggle">
+                                <button class="deliveryButton deliveryButtonActive" aria-pressed="true">Доставка</button>
+                                <button class="deliveryButton" @click="openWarning" aria-pressed="false">Самовывоз</button>
+                            </div>
+                            <button class="addressInput"
+                                    @click="openWarning"
+                                    aria-label="Выбрать адрес доставки">
+                            <span class="addressIcon">
+                                <img class="addressIconCircle" src="/img/pointer.svg" alt="" aria-hidden="true" />
+                            </span>
+                                <span class="addressText">На какой адрес доставить?</span>
+                                <img class="addressArrow" src="/img/arrow.svg" alt="" aria-hidden="true" />
+                            </button>
                         </div>
-                        <button class="addressInput"
-                                @click="openWarning"
-                                aria-label="Выбрать адрес доставки">
-                        <span class="addressIcon">
-                            <img class="addressIconCircle" src="/img/pointer.svg" alt="" aria-hidden="true" />
-                        </span>
-                            <span class="addressText">На какой адрес доставить?</span>
-                            <img class="addressArrow" src="/img/arrow.svg" alt="" aria-hidden="true" />
-                        </button>
+
+                        <img class="promoBanner" src="/img/banner.png" alt="Промо баннер" />
+
+                        <article class="productsSection">
+                            <h1 class="productsTitle">Популярное</h1>
+                            <div class="productsGrid">
+                                <Dish
+                                    v-for="dish in dishes"
+                                    :key="dish.id"
+                                    :dish="dish"
+                                />
+                            </div>
+                        </article>
                     </div>
-
-                    <img class="promoBanner" src="/img/banner.png" alt="Промо баннер" />
-
-                    <article class="productsSection">
-                        <h1 class="productsTitle">Популярное</h1>
-                        <div class="productsGrid">
-                            <Dish
-                                v-for="dish in dishes"
-                                :key="dish.id"
-                                :dish="dish"
-                            />
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <img class="searchIcon" src="" alt="" aria-hidden="true" />
+                </section>
+                <img class="searchIcon" src="" alt="" aria-hidden="true" />
+            </div>
         </div>
     </div>
 </template>

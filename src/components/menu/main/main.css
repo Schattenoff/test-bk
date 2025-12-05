@@ -1,4 +1,8 @@
-/* --- Main Content Styles --- */
+.content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .contentWrapper {
     display: flex;
     gap: 32px;
@@ -155,4 +159,76 @@
 .productsRow {
     display: flex;
     gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainContentContainer {
+        gap: 16px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .promoBanner {
+        display: none !important;
+    }
+
+    .productsTitle {
+        font-size: 35px;
+    }
+    
+    .deliverySection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .deliveryToggle {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        padding: 2px;
+        border-radius: 13px;
+    }
+
+    .deliveryButton {
+        height: 40px;
+        font-size: 16px;
+        border-radius: 11px;
+        padding: 0 2px;
+    }
+
+    .addressInput {
+        width: 100%;
+        height: 44px;
+        border-radius: 11px;
+        font-size: 16px;
+        padding: 0 12px;
+    }
+
+    .addressIcon {
+        width: 9px;
+        height: 13px;
+        margin-right: 10px;
+    }
+    .addressText {
+        font-size: 16px;
+    }
+
+    .addressArrow {
+        width: 6px;
+        height: 10px;
+        margin-left: auto;
+    }
+
+    .productsGrid {
+      gap: 10px;
+    }
 }
