@@ -28,7 +28,6 @@ export default {
                 <RestaurantsDropdown />
                 <ul class="headerLinks">
                     <li><a href="/vacancies" :class="['headerLink', { 'headerLink--active': isActive('/vacancies') }]">Вакансии</a></li>
-                    <li><a href="/contacts" :class="['headerLink', { 'headerLink--active': isActive('/contacts') }]">Контакты</a></li>
                 </ul>
                 <button class="cartButton" type="button" aria-label="Корзина" @click="openWarning">
                     <span class="cartIconSearch">
