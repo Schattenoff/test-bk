@@ -8,7 +8,6 @@
 .footer__container {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 95px;
     margin: 0 auto;
 }
@@ -37,6 +36,7 @@
     display: block;
     text-decoration: none;
     color: #522113;
+    flex-shrink: 0;
 }
 
 .footer__logoSectionText {
