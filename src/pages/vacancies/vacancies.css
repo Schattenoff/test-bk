@@ -105,5 +105,51 @@
     text-wrap: balance;
 }
 
+@media (max-width: 700px) {
+    .vacancies {
+        padding: 20px 0;
+    }
 
+    .vHero__title {
+        font-size: 30px;
+        line-height: 120%;
+    }
 
+    .vHero__text {
+        font-size: 18px;
+        margin: 16px 0 24px 0;
+    }
+
+    .vBenefits {
+        min-height: auto;
+        background-position: center -80px;
+        background-size: contain;
+        padding: 140px 0 20px 0;
+    }
+
+    .vBenefits__bgImage {
+        display: none;
+    }
+
+    .vBenefits__wrap {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .vBenefits__item {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .vBenefits__itemTitle {
+        font-size: 18px;
+        line-height: 120%;
+        margin: 12px 0 8px 0;
+    }
+
+    .vBenefits__itemText {
+        font-size: 14px;
+    }
+}

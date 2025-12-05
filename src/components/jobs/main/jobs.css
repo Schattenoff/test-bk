@@ -20,3 +20,23 @@
     align-items: center;
     gap: 16px;
 }
+
+@media (max-width: 700px) {
+    .vJobs {
+        padding: 20px 0 0 0;
+    }
+
+    .vJobsItem__wrapper {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .vJobs__title {
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .vJobs__list {
+        gap: 12px;
+    }
+}

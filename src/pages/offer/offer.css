@@ -63,3 +63,31 @@
 .offer__paragraph:last-child {
     margin: 0;
 }
+
+@media (max-width: 700px) {
+
+    .offer {
+        padding: 20px 0;
+    }
+
+    .offer__wrapper {
+        padding: 20px;
+        border-radius: 16px;;
+    }
+
+    .offer__breadcrumbs {
+        font-size: 14px;
+    }
+
+    .offer__title {
+        font-size: 30px;
+    }
+
+    .offer__section-title {
+        font-size: 20px;
+    }
+
+    .offer__paragraph {
+        font-size: 16px;
+    }
+}
