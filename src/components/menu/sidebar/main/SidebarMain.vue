@@ -33,6 +33,8 @@ export default {
             this.categories.forEach(category => {
                 category.isActive = category.id === categoryId;
             });
+
+            this.$emit('change', categoryId);
         }
     }
 };

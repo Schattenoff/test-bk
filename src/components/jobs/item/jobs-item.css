@@ -95,3 +95,18 @@
     color: #FBF5EA;
     border-radius: 100px;
 }
+
+@media(max-width: 700px) {
+    .vJobsItem__wrapper {
+        font-size: 18px;
+        gap: 25px;
+    }
+
+    .vJobsItem__textHtml p { 
+        font-size: 16px;
+    }
+
+    .vJobsItem__textHtml li {
+        font-size: 14px;
+    }
+}

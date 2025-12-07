@@ -42,7 +42,8 @@
         overflow-x: auto;
         overflow-y: hidden;
         gap: 10px;
-        margin: 0;
+        margin: 0 -20px;
+        padding: 0 20px;
     }
     .categoryList::-webkit-scrollbar {
         display: none;
