@@ -72,9 +72,9 @@ export default {
                 id: 'takeaway',
                 title: "Удобно с собой",
                 dishes: [
-                { id: 1, image: "/img/menu/takeaway/1.png", alt: "Синг Бокс", badgeType: "На одного", badgeText: "На одного", name: "Синг Бокс", weight: "" },
-                { id: 2, image: "/img/menu/takeaway/2.png", alt: "Дуэт Бокс", badgeType: "На двоих", badgeText: "На двоих", name: "Дуэт Бокс", weight: "" },
-                { id: 3, image: "/img/menu/takeaway/3.png", alt: "Пати Бокс", badgeType: "На троих", badgeText: "На троих", name: "Пати Бокс", weight: "" },
+                { id: 1, image: "/img/menu/takeaway/1.png", alt: "Синг Бокс", badgeType: "", badgeText: "", name: "Синг Бокс", weight: "" },
+                { id: 2, image: "/img/menu/takeaway/2.png", alt: "Дуэт Бокс", badgeType: "", badgeText: "", name: "Дуэт Бокс", weight: "" },
+                { id: 3, image: "/img/menu/takeaway/3.png", alt: "Пати Бокс", badgeType: "", badgeText: "", name: "Пати Бокс", weight: "" },
                 { id: 4, image: "/img/menu/takeaway/4.png", alt: "Липтон 300 мл", badgeType: "", badgeText: "", name: "Липтон", weight: "300 мл" }
                 ]
             },
