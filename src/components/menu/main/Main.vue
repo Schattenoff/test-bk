@@ -22,7 +22,6 @@ export default {
                 title: "Популярное",
                 dishes: [
                 { id: 1, image: "/img/menu/popular/1.png", alt: "Чизбургер", badgeType: "Spicy", badgeText: "Spicy", name: "Чизбургер", weight: "190 г" },
-                { id: 2, image: "/img/menu/popular/2.png", alt: "Кинг Фри большой", badgeType: "", badgeText: "", name: "Кинг Фри большой", weight: "300 г" },
                 { id: 3, image: "/img/menu/popular/3.png", alt: "Наггетсы (9 шт.)", badgeType: "", badgeText: "", name: "Наггетсы (9 шт.)", weight: "125 г" },
                 { id: 4, image: "/img/menu/popular/4.png", alt: "Двойной воппер с сыром", badgeType: "", badgeText: "", name: "Двойной воппер с сыром", weight: "250 г" },
                 { id: 5, image: "/img/menu/popular/5.png", alt: "Фиш Бургер", badgeType: "Bestseller", badgeText: "Bestseller", name: "Фиш Бургер", weight: "195 г" },

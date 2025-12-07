@@ -1,4 +1,3 @@
-/* --- Promos Carousel Styles --- */
 .promos {
     width: 100%;
     overflow-x: auto;
@@ -44,7 +43,7 @@
   .promos__slide {
     width: 140px;
     min-width: 140px;
-    height: 180px;
+    height: 182px;
     border-radius: 14px;
   }
 }
