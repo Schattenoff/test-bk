@@ -25,11 +25,6 @@
         padding: 20px 0 0 0;
     }
 
-    .vJobsItem__wrapper {
-        font-size: 18px;
-        gap: 25px;
-    }
-
     .vJobs__title {
         font-size: 25px;
         line-height: 120%;
