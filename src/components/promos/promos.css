@@ -37,8 +37,11 @@
   .promos {
     margin: 18px 0 0 0;
   }
+
   .promos__container {
     gap: 8px;
+    margin: 0 -20px;
+    padding: 0 20px;
   }
   .promos__slide {
     width: 140px;
